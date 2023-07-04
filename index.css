@@ -1,0 +1,132 @@
+:root{
+    --color1: #e5eff5;
+    --color2: #2ab2af;
+    --color3: #c0df34;
+}
+
+.color1{
+    color: var(--color1);
+}
+.color2{
+    color: var(--color2);
+}
+.color3{
+    color: var(--color3);
+}
+.color4{
+    color: #98a6bd;
+}
+
+p, a, span{
+    font-size: 18px;
+}
+
+body{
+    margin: 0;
+    padding: 30px;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    background-color: white;
+    width: 850px;
+}
+
+.community{
+    width: min(600px, 90%);
+    margin: auto;
+}
+
+main > div{
+    display: flex;
+}
+
+main > div > section{
+    width: 50%;
+    padding: 10px 35px;
+    background-color: var(--color2);
+    color: white;
+}
+
+.price{
+    font-size: 50px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.price span{
+    margin: 0 10px;
+}
+
+.subscription button{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 5px;
+}
+
+.subscription button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.subscription button:active{
+    opacity: 1;
+}
+
+.why-us{
+    opacity: 0.7;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.coder{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.coder a{
+    display: none;
+    color: #2ab2af;
+}
+
+.coder:hover a{
+    display: block;
+}
+
+.coder:hover a:hover{
+    color: #c0df34;
+}
+
+@media screen and (width < 650px){
+    body{
+        padding: 10px;
+    }
+
+    main > div{
+        flex-direction: column;
+    }
+
+    main > div > section{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
